@@ -32,6 +32,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmh-fu-Sej">
                                 <rect key="frame" x="179" y="348" width="56" height="30"/>
                                 <state key="normal" title="색상 변경"/>
+                                <connections>
+                                    <action selector="tapChangeColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s6n-fe-CnW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -48,6 +51,9 @@
                             <constraint firstItem="wmh-fu-Sej" firstAttribute="top" secondItem="Bk9-Ht-K88" secondAttribute="bottom" constant="24" id="utZ-eO-BWP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorView" destination="Bk9-Ht-K88" id="KCh-ZU-Rho"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
