@@ -8,9 +8,16 @@
 import UIKit
 
 class CodePushViewController: UIViewController {
-
+    @IBOutlet weak var namelabel: UILabel!
+    
+    var name: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let name = name {
+            self.namelabel.text = name
+            self.namelabel.sizeToFit()
+        }
 
     }
     
